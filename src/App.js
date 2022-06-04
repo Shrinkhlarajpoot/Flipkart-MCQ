@@ -4,7 +4,7 @@ import { Nav } from './components/Header/Nav';
 import { useProducts } from './context/productContext';
 
 function App() {
- const {products, state, dispatch, getuniqueSize, filteredProducts}= useProducts();
+ const {state, dispatch, getuniqueSize, filteredProducts}= useProducts();
  const filterClearHandler = () => {
   dispatch({type: "FILTER_CLEAR", payload: {price: "", size: [], brand: "", category: ""}})
 }
